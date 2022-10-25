@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% from "_formhelpers.html" import render_field %}
+    <form method="POST" action="/">
+        <dl>
+            {{ render_field(form.full_name) }}
+            {{ render_field(form.address) }}
+            {{ render_field(form.phone_number) }}
+            {{ render_field(form.driving_license_cat) }}
+            {{ render_field(form.id_number) }}
+            {{ render_field(form.id_provider) }}
+            {{ render_field(form.date) }}
+            {{ render_field(form.hour) }}
+            {{ render_field(form.location) }}
+            {{ render_field(form.street) }}
+            {{ render_field(form.car) }}
+            {{ render_field(form.license_plate) }}
+            {{ render_field(form.car_owner) }}
+            {{ render_field(form.insurance_company) }}
+            {{ render_field(form.policy_id) }}
+            {{ render_field(form.expiry_date) }}
+            {{ render_field(form.victims_name) }}
+            {{ render_field(form.victims_car) }}
+            {{ render_field(form.victims_license_plate) }}
+            {{ render_field(form.accident_description) }}
+            {{ render_field(form.victims_car_damage) }}
+            {{ render_field(form.perpetrator_car_damage) }}
+            {{ render_field(form.other_damage) }}
+            {{ render_field(form.witnesses_names) }}
+        </dl>
+    </form>
+</body>
+</html>
